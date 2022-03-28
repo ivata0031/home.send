@@ -38,7 +38,6 @@ public class UnsuccessfulLogin extends TestUtil {
 
     @Test (dataProvider = "UnsuccessfulLogin.csv")
     public void UnsuccessfulLoginTest(String userName, String password) {
-        //driver.get("https://www.saucedemo.com/");
 
         WebElement username = driver.findElement(By.id("user-name"));
         username.click();

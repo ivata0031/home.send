@@ -23,6 +23,7 @@ public class OpenPage extends TestUtil {
         WebElement LoginBtn = driver.findElement(By.cssSelector("[value=Login]"));
         LoginBtn.click();
 
+        //Assert
         WebElement userAllPagesButton = driver.findElement(By.id("react-burger-menu-btn"));
         Assert.assertTrue(userAllPagesButton.isDisplayed());
 

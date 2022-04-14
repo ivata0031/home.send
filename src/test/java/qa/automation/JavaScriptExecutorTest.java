@@ -3,7 +3,6 @@ package qa.automation;
 import base.TestUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -21,7 +20,6 @@ public class JavaScriptExecutorTest extends TestUtil {
 
        WebElement LoginBtn = driver.findElement(By.cssSelector("[value=Login]"));
        LoginBtn.click();
-//       LoginBtn.sendKeys(Keys.ENTER);
 
         JavascriptExecutor script = (JavascriptExecutor) driver;
         script.executeScript("arguments[0].scrollIntoView()",

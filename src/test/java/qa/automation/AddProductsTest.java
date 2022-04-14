@@ -27,6 +27,5 @@ public class AddProductsTest extends TestUtil {
         productsPage.addItemToTheCart(product3);
         Thread.sleep(3000);
         productsPage.getItemsInTheCart();
-
     }
 }
